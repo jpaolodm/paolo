@@ -1,0 +1,513 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Paolo Martinez</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8"/>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+  <!-- <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen"> -->
+  <link href='https://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/reveal.css" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"> --> 
+
+<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  
+<style type="text/css">
+
+  /* grid */
+  .grid-60  { width: 60%; }
+  .grid-40  { width: 40%; }
+  .grid-100 { width: 100%; }
+  .grid-33  { width: 33.33%; }
+  .grid-66  { width: 66.67%; }
+  .grid-50  { width: 50%; }
+
+  .grid-60, .grid-40, .grid-100, .grid-33, .grid-66, .grid-50 {
+    float: left;
+    display: block;
+  }
+
+  .container{
+  width: 90%;
+  max-width: 1060px; 
+  margin: auto;
+  }
+  .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+
+  *, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+  /* grid */
+
+  /* images */
+
+
+  .macallan { background: url('img/macallan3.jpg') no-repeat center;}
+  .domar { background: url('img/domar.jpg') no-repeat center; }
+  .bnp { background: url('img/bnp_paribas.jpg') no-repeat center; }
+  .street2 { background: url('img/bmw_ani.gif') no-repeat center; }
+  .uob { background: url('img/uob.jpg') no-repeat center; }
+  .one-tee { background: url('img/ONEFC_Everlast_Tee_1204.jpg') no-repeat center; }
+  .julius { background: url('img/julius_baer.jpg') no-repeat center; }
+  .street1 { background: url('img/fightershirt.gif') no-repeat center; }
+  .one-bike { background: url('img/ONEFC_bike2.jpg') no-repeat center; }
+  .german { background: url('img/German3.jpg') no-repeat center; }
+  .bmw { background: url('img/leedon.jpg') no-repeat center; }
+  .pmath-vid { background: url('img/elves.gif') no-repeat center; }
+  .underone { background: url('img/under1roof.gif') no-repeat center; }
+
+  .visual {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  float: left;
+  }
+
+  /* height of boxes */
+  .box-macallan { height: 590px; }
+  .box-domar { height: 250px; }
+  .box-bnp { height: 340px; }
+  .box-street2 { height: 320px; }
+  .box-418 { height: 418px; }
+  .box-500 { height: 500px; }
+  .box-450 { height: 450px; }
+  .box-399 { height: 399px; }
+
+  /* on hover */
+    .box {
+      overflow:hidden
+    }
+
+    #mainwrapper .box {
+      position: relative;
+     /* cursor: pointer; */
+    }
+
+    #mainwrapper .box .visual {
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out; 
+    transition: all 300ms ease-out;
+    }
+
+    #mainwrapper .caption {
+	background-color: rgba(44,62,80,.9);
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	left: 0;
+	width: 100%;
+	height: inherit;
+    }
+
+    #mainwrapper .box .simple-caption {
+    height: 150px;
+    display: block;
+    bottom: -150px;
+    line-height: 25pt;
+    text-align: left;
+    padding: 20px 20px;
+    }
+
+    #mainwrapper .box:hover .simple-caption {
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    opacity: 1;
+    transform: translateY(-100%);
+    }
+
+/* on hover */
+
+    a { text-decoration:none; color: inherit;}
+
+    .linky {
+      border-bottom: 3px solid rgba(52,73,94,.2);
+      padding-bottom: 2px;
+      font-weight: 300;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+
+ /* on hover content */
+    h2 {
+      font-family: 'Lato';
+      font-weight: 900; font-size: 25px;
+      line-height: 22px;
+    }
+
+    .box p {
+
+      font-family: 'Lato';
+      font-weight: 300; font-size: 20px;
+    }
+
+    .thin { font-weight: 300; font-size: 20px; }
+
+/* responsive */
+    @media only screen and (max-width : 768px)  {
+	
+	.grid-60, .grid-40, .grid-100, .grid-33, .grid-66, .grid-50 {
+	width: 100%; 
+	margin: 0 auto;
+	float: left;
+	}
+
+    #mainwrapper .box .simple-caption { bottom: 0; }
+    #mainwrapper .box:hover .simple-caption {
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    opacity: 1;
+    transform: translateY(100%);
+    }
+  
+	h2 { }
+	p, span { }
+	.domar { height:100%; padding-top:50px; }
+	.uob {height: 100%;}
+
+	.box-macallan { height: 590px; }
+  	.box-domar { height: 350px; }
+  	.box-bnp { height: 340px; }
+  	.box-street2 { height: 320px; }
+  	.box-418 { height: 500px; }
+  	.box-500 { height: 550px; }
+  	.box-450 { height: 450px; }
+  	.box-399 { height: 399px; }
+    
+    } /* end of media */
+
+</style>
+
+<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
+</head>
+
+<body style="background-color: #fafafa;">
+<header class="container clearfix" style="text-align:center; padding-top:70px; padding-bottom:40px;">
+
+<a href="http://paolomartinez.com/"><img src="Paolo_Logo.svg" height="100"></a>
+<p style="color:#7f8c8d; font-weight: 300; font-size: 20px;">Hello! Welcome to <a href="http://paolomartinez.com/about.html"><span class="linky">Paolo Martinez's</span></a> Portfolio</p>  
+<p style="color:#7f8c8d; font-weight: 300; font-size: 20px;">Drop me an email at <a href="mailto:hello@paolomartinez.com" class="linky">hello@paolomartinez.com<a/></p>
+
+<p style="color:#7f8c8d; font-family: 'Lato'; font-weight: 300; font-size: 16px; padding-top:30px;">I am currently in the process of revamping my site. For now, please view some of my works below.</p>
+
+</header>
+
+
+<section id="mainwrapper" class="container clearfix">
+
+  <div class="box grid-60 box-macallan">
+    <a href="#" data-reveal-id="mod-macallan1">
+        <div class="macallan visual "></div>
+    </a>
+    <span class="caption simple-caption">
+      <h2> THE MACALLAN RARE CASK SINGAPORE LAUNCH INVITATION </h2>
+      <p> Art Direction and Graphic Design </p>
+    </span>
+  </div>
+
+  <div class="box grid-40 box-domar">
+	<a href="#" data-reveal-id="mod-domar">
+	    <div class="domar visual"></div>
+	</a>
+    <span class="caption simple-caption">
+      <h2> DOMAR FURNITURE </h2>
+      <p> Brand Design, Art Direction, Web Design &amp; Code </p>
+    </span>
+  </div>
+
+  <div class="box grid-40 box-bnp">
+  	<a href="#" data-reveal-id="mod-bnp">
+     <div class="bnp visual"></div>
+    </a>
+    <span class="caption simple-caption">
+      <h2> BNP PARIBAS HANOI BRANCH OPENING INVITATION </h2>
+      <p> Art Direction and Graphic Design </p>
+    </span>
+  </div>
+    
+<div class="box grid-100 box-street2">
+	<a href="#" data-reveal-id="mod-bmw">  	
+	   <div class="street2 visual"></div>
+	</a>  
+    <span class="caption simple-caption">
+      <h2> THE BMW 7 SERIES LAUNCH KOREA INVITATION </h2>
+      <p> Art Direction and Graphic Design </p>
+    </span>
+  </div>
+  
+  <div style="clear:both;"></div>
+
+  <div class="box grid-33 box-418">
+  	<a href="#" data-reveal-id="mod-uob">
+     <div class="uob visual"></div>
+    </a>
+    <span class="caption simple-caption">
+      <h2> UOB THE HEART OF ART KEY VISUAL </h2>
+      <p> Art Direction &amp; Illustration </p>
+    </span>
+  </div>
+  
+  <div class="box grid-33 box-418">
+  	<a href="#" data-reveal-id="mod-one-tee">
+     <div class="one-tee visual"></div>
+    </a>
+    <span class="caption simple-caption">
+      <h2>EVERLAST <span class="thin">X</span> ONEFC BATTLE OF LIONS T-SHIRT </h2>
+      <p>Art Direction and Illustration</p>
+    </span>
+  </div>
+
+  <div class="box grid-33 box-418">
+    <a href="#" data-reveal-id="mod-julius">
+     <div class="julius visual"></div>
+    </a>
+    <span class="caption simple-caption">
+      <h2> JULIUS B&#196;R ROCK, POP, HIPHOP NIGHT KEY VISUAL </h2>
+      <p> Art Direction and Illustration</p>
+    </span>
+  </div>
+
+  <div style="clear:both;"></div>
+  
+  <div class="box grid-33 box-500">
+	<a href="#" data-reveal-id="mod-street1">
+     <div class="street1 visual"></div>
+    </a>
+    <span class="caption simple-caption">
+      <h2> ONEFC FIGHTER WALKOUT T-SHIRTS</h2>
+      <p> Art Direction and Illustration</p>
+    </span>
+  </div>
+
+  <div class="box grid-66 box-500">
+    <a href="#" data-reveal-id="mod-pmath-vid"> 
+      <div class="pmath-vid visual"></div>
+    </a>
+    <span class="caption simple-caption">
+      <h2> FLASH COMMUNICATIONS CHRISTMAS ECARD</h2>
+      <p> Art Direction, Illustration and Animation </p>
+    </span>
+  </div>
+
+  <div class="box grid-50 box-450">
+   <a href="#" data-reveal-id="mod-german"> 
+    <div class="german visual"></div>
+   </a> 
+    <span class="caption simple-caption">
+      <h2> GERMAN CENTRE VISION 20/20 INVITATION </h2>
+      <p> Art Direction and Graphic Design </p>
+    </span>
+  </div>
+
+  <div class="box grid-50 box-450"> 
+   <a href="#" data-reveal-id="mod-one-bike">
+      <div class="one-bike visual"></div> 
+   </a>   
+   <span class="caption simple-caption">
+      <h2> ONEFC <span class="thin">X</span> MAH MOTORS APRILIA BIKE </h2>
+      <p> Art Direction and Graphic Design </p>
+    </span>
+  </div>
+
+  <div class="box grid-50 box-399">
+   <a href="#" data-reveal-id="mod-underone">
+    <div class="underone visual"></div>
+   </a>
+   <span class="caption simple-caption">
+      <h2> UNDER ONE ROOF DUBAI INVITATION </h2>
+      <p> Art Direction and Graphic Design </p>
+    </span>
+  </div>
+
+  <div class="box grid-50 box-399">
+  	<a href="#" data-reveal-id="mod-leedon">
+     <div class="bmw visual"></div>
+    </a>
+    <span class="caption simple-caption">
+      <h2> LEEDON RESIDENCES: NATURAL LUXURY</h2>
+      <p> Art Direction and Illustration </p>
+    </span>
+  </div>
+
+
+<!-- video modal  -->
+<div id="mod-pmath-vid" class="reveal-modal large">
+	<table cellspacing="0" cellpadding="0" width="100%" align="center" bgcolor="#ffffff" border="0">
+  <tbody>
+  <tr>
+    <td align="middle">
+      <table cellspacing="0" cellpadding="0" width="650" border="0">
+        <tbody>
+        <tr>
+          <td align="left"></td></tr></tbody></table>
+      <table cellspacing="0" cellpadding="0" width="650" align="center" border="0">
+        <tbody><br><br>
+      
+        <tr>
+          <td align="middle"><font face="Arial, sans-serif" color="#000000" size="1">We wish you the happiest of 
+            holidays!</font><font face="Arial, sans-serif" color="#000000"><br><br></font></td>
+        </tr></tbody></table><!-- ImageReady Slices (NT0797E.psd) -->
+      <table id="Table_01" height="850" cellspacing="0" cellpadding="0" width="650" border="0">
+        <tbody>
+        <tr>
+          <td align="left"><img style="DISPLAY: block" height="224" alt="" src="img/christmas_01.gif" width="650" border="0"></td></tr>
+        <tr>
+          <td align="left"><img style="DISPLAY: block" height="311" alt="" src="img/christmas_02.gif" width="650" border="0"></td></tr>
+        <tr>
+          <td align="left"><img style="DISPLAY: block" height="315" alt="" src="img/christmas_03.gif" width="650" border="0"></td></tr>
+        
+        </tbody></table><!-- End ImageReady Slices --><font style="FONT-SIZE: 10px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif" face="Verdana, Arial, Helvetica, sans-serif" color="#000000" size="1"> <br><br> 
+    <font style="FONT-SIZE: 10px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif" face="Verdana, Arial, Helvetica, sans-serif" color="#000000" size="1">Flash Communications Pte Ltd<br>18 Howard Road #03-02<br>Novelty BizCentre Singapore 369585<br>All 
+      rights reserved.<br><br><br></font></font></td>
+    <td align="left" width="15"><img style="DISPLAY: block" height="1" alt="" src="" width="15" border="0"></td></tr></tbody></table>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+<!-- video modal  -->
+
+<!-- images modal -->
+<div id="mod-macallan1" class="reveal-modal large">
+	<img src="modal/mod-macallan-1.jpg">	
+  <img src="modal/mod-macallan-2.jpg">  
+  <img src="modal/mod-macallan-3.jpg">  
+  <img src="modal/mod-macallan-4.jpg">  
+  <img src="modal/mod-macallan-5.jpg">  
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="mod-domar" class="reveal-modal large">
+  <img src="modal/mod-domar-1.jpg"> 
+  <img src="modal/mod-domar-2.jpg">   
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="mod-bnp" class="reveal-modal large">
+  <img src="modal/mod-bnp-1.jpg"> 
+  <img src="modal/mod-bnp-2.jpg"> 
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="mod-bmw" class="reveal-modal large">
+	<img src="modal/mod-bmw-1.jpg">  
+  <img src="modal/mod-bmw-2.gif">  
+  <img src="modal/mod-bmw-3.jpg"> 
+  <a class="close-reveal-modal">&#215;</a>
+</div> 
+
+<div id="mod-uob" class="reveal-modal large">
+  <img src="modal/mod-uob-1.jpg">  
+  <img src="modal/mod-uob-2.jpg">  
+  <img src="modal/mod-uob-3.jpg">
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="mod-one-tee" class="reveal-modal large">
+  <img src="modal/mod-one-tee-1.jpg">  
+  <img src="modal/mod-one-tee-2.jpg">  
+  <img src="modal/mod-one-tee-3.jpg">  
+  <img src="modal/mod-one-tee-4.jpg">  
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="mod-julius" class="reveal-modal large">
+  <img src="modal/mod-julius-1.jpg">  
+  <img src="modal/mod-julius-2.jpg">  
+  <img src="modal/mod-julius-3.jpg">  
+  <img src="modal/mod-julius-4.jpg">  
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="mod-street1" class="reveal-modal large">
+  <img src="modal/mod-one-fighter-5.jpg"> 
+  <img src="modal/mod-one-fighter-4.jpg"> 
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="mod-one-bike" class="reveal-modal large">
+  <img src="modal/mod-one-bike-1.jpg">  
+  <img src="modal/mod-one-bike-2.jpg">  
+  <img src="modal/mod-one-bike-3.jpg">  
+  <img src="modal/mod-one-bike-4.jpg">  
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="mod-german" class="reveal-modal large">
+  <img src="modal/mod-german-1.jpg">  
+  <img src="modal/mod-german-2.jpg">  
+  <img src="modal/mod-german-3.jpg">  
+  <img src="modal/mod-german-4.jpg">  
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<!-- <div id="mod-leedon" class="reveal-modal large">
+  <img src="modal/mod-bmw-1.jpg">  
+  <img src="modal/mod-bmw-2.gif">  
+  <img src="modal/mod-bmw-3.jpg"> 
+	<a class="close-reveal-modal">&#215;</a>
+</div> -->
+
+<div id="mod-underone" class="reveal-modal large">
+  <img src="modal/mod-underone-1.jpg"> 
+  <img src="modal/mod-underone-2.jpg"> 
+<!--   <img src="modal/mod-underone-3.jpg">  -->
+  <!-- <img src="modal/mod-underone-4.jpg">  -->
+  <img src="modal/mod-underone-5.jpg"> 
+ <!--  <img src="modal/mod-underone-6.jpg">  -->
+  <!-- <img src="modal/mod-underone-7.jpg">  -->
+  <img src="modal/mod-underone-8.jpg"> 
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+<!-- images modal -->
+
+</section>
+
+<footer class="container clearfix" style="text-align:center; padding-top:70px; padding-bottom:40px;">
+<p class="grid_12" style="color:#7f8c8d; font-weight: 300; font-size: 14px;">&#169; 2016. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
+
+
+
